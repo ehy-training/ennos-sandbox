@@ -87,6 +87,8 @@ COLOR & STYLE
     --color-mid-light-grey: hsl(var(--color-base), 21%, 76%);
     --color-light-grey: hsl(var(--color-base), 13%, 89%);
     --color-sub-white: hsl(var(--color-base), 3%, 97%);
+    
+      /**Accent Colors**/
     --color-accent-a: hsl(30,89%,42%);
 
 }
