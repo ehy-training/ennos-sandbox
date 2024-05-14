@@ -1,0 +1,210 @@
+/*
+Stylesheet for Enno's Sandbox
+Version: 1:0
+*/
+
+/*---------------------
+RESET
+---------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+/*---------------------
+LAYOUT
+---------------------*/
+
+:root {
+    --layout-base-margin: 8px;
+    --layout-stage-width: 1200px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+figure {
+    margin-bottom: 1em;
+}
+
+.container {
+    max-width: var(--layout-stage-width);
+    margin: 0 auto;
+    padding: 1em var(--layout-base-margin);
+}
+
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-content {
+    min-height: 70vh;
+}
+
+/*---------------------
+NAVIGATION
+---------------------*/
+
+
+/*---------------------
+TYPOGRAPHY
+---------------------*/
+
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    line-height: 1.3;
+}
+
+/*---------------------
+COLOR & STYLE
+---------------------*/
+
+:root {
+    --color-base: 200;
+
+    /**Grey Scale**/
+    --color-sub-black: hsl(var(--color-base), 13%, 5%);
+    --color-dark-grey: hsl(var(--color-base), 21%, 13%);
+    --color-mid-dark-grey: hsl(var(--color-base), 21%, 34%);
+    --color-mid-grey: hsl(var(--color-base), 21%, 55%);
+    --color-mid-light-grey: hsl(var(--color-base), 21%, 76%);
+    --color-light-grey: hsl(var(--color-base), 13%, 89%);
+    --color-sub-white: hsl(var(--color-base), 3%, 97%);
+    --color-accent-a: hsl(30,89%,42%);
+
+}
+
+body {
+    background: var(--color-dark-grey);
+}
+
+.main-nav,
+header {
+    background: var(--color-mid-light-grey);
+}
+
+.main-nav,
+.main-nav a,
+header,
+header a,
+footer,
+footer a {
+    color: var(--color-sub-white);
+}
+
+.main-nav a:hover {
+    color: var(--color-accent-a);
+}
+
+
+main {
+    background: var(--color-sub-white);
+}
+
+header,
+main {
+    color: var(--color-mid-dark-grey);
+}
+
+/*---------------------
+COMPONENTS
+---------------------*/
+
+/**--------
+Comp Color Palette
+--------**/
+
+.comp.color-palette>div>div {
+    width: 100%;
+    height: calc(100vw - (var(--layout-base-margin) * 2));
+    padding: var(--layout-base-margin);
+}
+
+.comp.color-palette>div>div>div {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--color-sub-black);
+}
+
+.comp.color-palette>div>div:nth-child(1)>div {
+    background: var(--color-sub-black);
+}
+
+.comp.color-palette>div>div:nth-child(2)>div {
+    background: var(--color-dark-grey);
+}
+
+.comp.color-palette>div>div:nth-child(3)>div {
+    background: var(--color-mid-dark-grey);
+}
+
+.comp.color-palette>div>div:nth-child(4)>div {
+    background: var(--color-mid-grey);
+}
+
+.comp.color-palette>div>div:nth-child(5)>div {
+    background: var(--color-mid-light-grey);
+}
+
+.comp.color-palette>div>div:nth-child(6)>div {
+    background: var(--color-light-grey);
+}
+
+.comp.color-palette>div>div:nth-child(7)>div {
+    background: var(--color-sub-white);
+}
+
+/*---------------------
+RESPONSIVE
+---------------------*/
+
+@media screen and (min-width: 580px) {
+
+    .navbar {
+        display: flex;
+        grid-gap: 1em;
+    }
+
+
+    .comp.color-palette>div>div {
+        width: 25%;
+        height: calc((100vw - (var(--layout-base-margin)*7))/4);
+    }
+
+
+
+}
+
+@media screen and (min-width: 1200px) { 
+
+    /**--------
+Comp Color Palette
+--------**/
+
+.comp.color-palette>div>div {
+    width: calc((var(--layout-stage-width) - (var(--layout-base-margin) * 2))/5);
+    height: calc((var(--layout-stage-width) - (var(--layout-base-margin) * 2))/5);
+}
+
+}
+
+/*---------------------
+DEV OVERRIDES
+---------------------*/
