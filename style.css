@@ -236,3 +236,8 @@ Comp Color Palette
 /*---------------------
 DEV OVERRIDES
 ---------------------*/
+
+table {
+    background: red;
+    color: white;
+}
