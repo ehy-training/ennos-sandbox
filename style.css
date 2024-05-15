@@ -20,6 +20,12 @@ nav a {
     text-decoration: none;
 }
 
+iframe {
+    width: 100%;
+    min-height: 50vh;
+    border: 0;
+}
+
 /*---------------------
 LAYOUT
 ---------------------*/
