@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background: #fff;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 300px 1fr 1fr 1fr;
+            grid-template-rows: 30vh 30vh 30vh;
+            gap: 8px;
+        }
+
+        .grid-item {
+            background-color: var(--color-mid-grey);
+            font-size: 2em;
+            padding: 1em;
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <section class="container">
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+</section>
+
+</body>
+
+</html>
